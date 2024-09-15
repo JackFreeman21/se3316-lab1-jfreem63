@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Backround */
+    background-color: #f4f4f4; /* Neutral background color */
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 }
 
 .plant-list > li {
-    border: 3px solid #66bb6a; /* Green border to add style and plant feel*/
+    border: 3px solid #66bb6a; /* Medium green border */
     border-radius: 8px;
     margin: 10px 0;
     padding: 15px;
@@ -29,7 +29,7 @@ h1 {
 
 .plant-list > li > h2 {
     margin: 0 0 10px 0;
-    color: #388e3c; /* add different shade of green here */
+    color: #388e3c; /* Slightly different shade of green for headers */
 }
 
 .plant-info {
@@ -39,6 +39,7 @@ h1 {
 .plant-info ul {
     list-style-type: none; /* Remove bullets from sublists */
     padding: 0;
+    margin: 0;
 }
 
 .plant-info li {
@@ -71,7 +72,7 @@ h1 {
 }
 
 .location-list {
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none; /* Remove bullets from the location list */
     padding: 0;
     margin: 0;
 }
@@ -82,7 +83,39 @@ h1 {
     display: inline;
     color: black; /* Keep text color as black */
 }
-/* I addede this CCS code to format the list of provinces for each plant so they are seperated in a list. They are in a list because I need each of their values for the search function and I want to itereate through them*/
+
 .location-list li + li::before {
-    content:', '; /* Add comma separator between location items */
+    content: ', '; /* Add comma separator between location items */
+}
+
+/* Plant images styling */
+.all_images {
+    margin-top: 10px;
+}
+
+.all_images ul {
+    list-style-type: none; /* Remove bullets from image list */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to arrange images side by side */
+    gap: 15px; /* Space between images */
+}
+
+.all_images li {
+    margin-bottom: 0; /* Remove bottom margin for images */
+    text-align: center; /* Center-align text under each image */
+}
+
+.all_images img {
+    width: 100%; /* Ensure size is consistent */
+    max-width: 300px; /* Limit maximum width */
+    border-radius: 4px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+    display: block; /* Ensure image block display */
+}
+
+.all_images .image-label {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #388e3c; /* Green color for labels */
 }
