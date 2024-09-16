@@ -11,7 +11,6 @@
 <body>
     <!-- Place your content here -->
     <h1>SE 3316 Lab 1</h1>
-    <p>Hello World!</p>
     <h1>List of Plants</h1>
     <div class="search_bar_Plant">
             <!-- input for searching by Botanical Name and the button and search bar to go with it-->
@@ -20,12 +19,23 @@
             <button id="searchButtonPlant">Enter</button>
         </label>
     </div>
-    <!-- Pop-up container -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span id="closePopup" class="close">&times;</span>
-            <ul id="resultList"></ul>
-        </div>
+    <div class="province_dropdown">
+        <label for="provinceSelect">Select a Province:</label>
+        <select id="provinceSelect">
+            <option value="">--Select Province--</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Newfoundland">Newfoundland</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Yukon">Yukon</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Alberta">Alberta</option>
+        </select>
     </div>
     <ul class="plant-list">
         <li>

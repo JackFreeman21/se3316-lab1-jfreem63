@@ -1,18 +1,4 @@
-const provincesAndTerritories = [
-    "Alberta",
-    "British Columbia",
-    "Manitoba",
-    "New Brunswick",
-    "Newfoundland and Labrador",
-    "Nova Scotia",
-    "Ontario",
-    "Prince Edward Island",
-    "Quebec",
-    "Saskatchewan",
-    "Northwest Territories",
-    "Nunavut",
-    "Yukon"
-  ];
+
   const plantsWithLocations = [
     {
       Name: "Aplectrum",
@@ -74,12 +60,11 @@ const provincesAndTerritories = [
       Name: "Goodyera tesselata",
       Locations: ["Ontario", "Newfoundland", "Nova Scotia", "New Brunswick", "Quebec", "Prince Edward Island", "Manitoba"]
     }
-  ];document.addEventListener('DOMContentLoaded', function() {
+  ];
+  document.addEventListener('DOMContentLoaded', function() {
     let search = document.getElementById('searchButtonPlant');
-    let popup = document.getElementById('popup');
-    let closePopup = document.getElementById('closePopup');
-    let resultList = document.getElementById('resultList');
-  
+   
+    let provinceSelect = document.getElementById('provinceSelect'); // Add 
     search.addEventListener('click', function() {
       let searchInput = document.getElementById('searchPlant').value;
       let true_Input = searchInput.replace(/[^a-zA-Z]/g, '').substring(0, 20);
@@ -97,4 +82,23 @@ const provincesAndTerritories = [
         alert('No matches found.');
       }
     });
+    provinceSelect.addEventListener('change', function() {
+        let selectedProvince = this.value
+        //checks to see if there is a selected province the filters the plants in province array with all the plants that include the selected province
+        if (selectedProvince) {
+            let plantsWithInProvince = plantsWithLocations.filter(plant => 
+                plant.Locations.includes(selectedProvince)
+            );
+                //if there is at least 1 plant for the province, then we show the plant names seperate with /n for a tidy list
+            if (plantsWithInProvince.length > 0) {
+                let names = plantsWithInProvince.map(plant => plant.Name).join('\n');
+                alert(`Plants found in ${selectedProvince}:\n\n${names}`);
+            } else {
+                alert(`No plants found in ${selectedProvince}.`);
+            }
+        }
+    });
+    
   });
+//directly calls the province select item on the change function
+
