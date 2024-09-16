@@ -6,13 +6,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="lab1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <!-- Place your content here -->
     <h1>SE 3316 Lab 1</h1>
     <p>Hello World!</p>
     <h1>List of Plants</h1>
+    <div class="search_bar_Plant">
+            <!-- input for searching by Botanical Name and the button and search bar to go with it-->
+        <label for ='searchPlant'>Search By Botanical Name</label>
+            <input type ='searchPlant' id ='searchPlant' >
+            <button id="searchButtonPlant">Enter</button>
+        </label>
+    </div>
+    <!-- Pop-up container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <ul id="resultList"></ul>
+        </div>
+    </div>
     <ul class="plant-list">
         <li>
             <h2>Aplectrum</h2>
@@ -50,46 +64,41 @@
             </div>
         </li>
         <li>
-            <h2>Platanthera blephariglottis
-                (Willdenow) Lindley</h2>
+            <h2>Triphora trianthophora
+         </h2>
             <div class="plant-info">
                 <ul>
                     <li><span class="label">Location:</span>
                         <ul class="location-list">
                             <li>Ontario</li>
-                            <li>Newfoundland</li>
-                            <li>Nova Scotia</li>
-                            <li>Prince Edward Island</li>
-                            <li>New Brunswick</li>
-                            <li>Quebec</li>
                         </ul>
                     </li>
                     <li><span class="label">Specific Habitat:</span><span class="value">	
-                        Rare in Quebec and Ontario. Formerly known from widely scattered stations in the Carolinian Zone, but now found only farther north and east in southern Ontario. Not known on the Bruce Peninsula, sometimes abundant in sheltered sphagnous bogs, especially in Muskoka. In the Ottawa District occurs primarily in the Mixed Forest Region, in several parts of the Mer Bleue Bog and in two small peatlands on the Canadian Shield. Large colonies thrive in sunny openings near scattered Black Spruce and Tamarack where the sphagnum-covered fen floor is very wet and loosely consolidated. Shrubs are thinly scattered or absent, and sedges are most common.</span></li>
-                    <li><span class="label">Flowering Season:</span><span class="value">July to early August.</span></li>
-                    <li><span class="label">Description:</span><span class="value">Height to 60 cm.
-                        Stem erect, leafy.
-                        Leaves 2 -3, elliptic to lanceolate, green, keeled, up to 20 X 3 cm., sheathing the stem below, becoming bracts above.
-                        Raceme loosely to densely flowered, 20 - 30 flowers.
-                        Flowers bright white, labellum tongue-shaped, finely fringed. Fragrance none or faintly spicy.</span></li>
-                        <li><span class="label">Comments:</span><span class="value">Almost exclusively an inhabitant of open black spruce-tamarack bogs, the 'cranberry bogs'. Found in association with Pogonia ophioglossoides and Calopogan tuberosus..</span></li>
-                    <li><span class="label">References:</span><span class="value">Orchids of Bruce & Grey
+                        Rich humus under loose dead leaves in hardwood forest. This plant exists chiefly underground, spreading by means of tubiferous stolons, sending up flowering shoots only in favourable years.</span></li>
+                    <li><span class="label">Flowering Season:</span><span class="value">August.</span></li>
+                    <li><span class="label">Description:</span><span class="value">Height 8-25 cm; stem green with purple shading, succulent, terete.
+                        Alternating leaf-sheaths clasping the stem
+                        Leaves: 2-8, green tinged with purple, ovate to cordate, with smooth margins.
+                        Flowers: 1-6, borne on pedicels from the upper leaves, flowers white, suffused with pale pink or bright magenta, three parallel, denticulate green crests on the three-lobed lip.</span></li>
+                        <li><span class="label">Comments:</span><span class="value">When plants emerge, they grow quickly to the flowering stage. As each of the usual three buds matures, it opens for one day only; however, all mature buds of a colony open on the morning of a favourable day, probably following a night that has been cooler than normal (Case 1964a, Correll 1950, Luer 1975).
+                            By producing an optimum number of flowers at one time, pollinators will more likely be lured and cross-fertilization take place.</span></li>
+                    <li><span class="label">References:</span><span class="value">	
                         Orchids of Ontario
-                        The Canadian Field-Naturalist Vol III - 1</span></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Platanthera_blephariglottis" target="_blank">Read more on Wikipedia</a></li>
+                        The Native Orchids of the United States excluding Florida</span></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Triphora_trianthophoros" target="_blank">Read more on Wikipedia</a></li>
                     <li class="all_images">
                         <span class="label">Images:</span>
                         <ul>
                             <li>
-                                <img src="images/Platanthera_blephariglottis_Flower.jpg" alt="Aplectrum Flower">
+                                <img src="images/Triphora trianthophora_Flower.jpg" alt="Aplectrum Flower">
                                 <div class="image-label">Flower</div>
                             </li>
                             <li>
-                                <img src="images/Platanthera_blephariglottis_Habitat.jpg" alt="Aplectrum Habitat">
+                                <img src="images/Triphora trianthophora_Habitat.jpg" alt="Aplectrum Habitat">
                                 <div class="image-label">Habitat</div>
                             </li>
                             <li>
-                                <img src="images/Platanthera_blephariglottis_Plant.jpg" alt="Aplectrum Plant">
+                                <img src="images/Triphora trianthophora_Plant.jpg" alt="Aplectrum Plant">
                                 <div class="image-label">Plant</div>
                             </li>
                         </ul>
