@@ -1,0 +1,20 @@
+254f54a - Jfreem63, 6 hours ago : changing folder name for consistancy
+3504d2b - Jfreem63, 6 hours ago : Fixing images url
+e34300f - Jfreem63, 6 hours ago : move  all images to all images folder as old folder was not getting ignored
+328144b - Jfreem63, 6 hours ago : Testing to see if git ignore works for new folder
+067e206 - Jfreem63, 6 hours ago : ignoring allimages
+22b6a10 - Jfreem63, 19 hours ago : ignoring images
+9dcfce4 - Jfreem63, 19 hours ago : gitignoring images
+5b213d3 - Jfreem63, 26 hours ago : changing name to index
+b1903b4 - Jfreem63, 26 hours ago : images foldere deleted/cashed
+e9a7958 - Jfreem63, 26 hours ago : Deleted images folder as it was added bfeor ethe gitignore was created
+665db63 - Jfreem63, 26 hours ago : Trying again to see if images are ignored
+a3cb3fe - Jfreem63, 26 hours ago : Images not ignored. Changed file structure so they should now be ignored
+39c3f7d - Jfreem63, 2 days ago : Includes all functionality. Still requires final review and CSS styling changes to search bar and drop down
+92ebe83 - Jfreem63, 2 days ago : Search By Botnical Name function Added
+c1136c3 - Jfreem63, 2 days ago : Finished HTML with 15 orchids and their associated photos
+a3677c3 - Jfreem63, 3 days ago : Added imgages and green styling to everything. This will be my model for the rest of the plant list going forward:
+ce6d9e0 - Jfreem63, 3 days ago : Basic HTML and CSS for 1 plant. Missing images and the list of plant but will add this to next comit
+dff797c - Jfreem63, 3 days ago : Added images foldre and the gitignore file
+9658581 - Jfreem63, 3 days ago : First commit with HTML skeleton
+53a4f86 - JackFreeman21, 3 days ago : Initial commit

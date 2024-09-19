@@ -67,7 +67,7 @@
     let provinceSelect = document.getElementById('provinceSelect'); // Add 
     search.addEventListener('click', function() {
       let searchInput = document.getElementById('searchPlant').value;
-      let true_Input = searchInput.replace(/[^a-zA-Z]/g, '').substring(0, 20);
+      let true_Input = searchInput.replace(/[^a-zA-Z\s]/g, '').substring(0, 20);
   
       let Allmatches = plantsWithLocations.filter(plant => 
         plant.Name.toLowerCase().startsWith(true_Input.toLowerCase())
